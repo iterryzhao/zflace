@@ -1,2 +1,4 @@
+# I recommend ignoring *.pyc and /instance to get you started.
+# Instance folders are used to make secret configuration variables available to your application.
 *.pyc
 instance/
