@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block body%}
+<!-- start slider -->
+<div class="slider">
+		<div class="image-slider">
+			<!-- Slideshow 1 -->
+			<ul class="rslides" id="slider1">
+				<li><img src="{{url_for('static', filename="images/slider1.jpg")}}" alt=""></li>
+				<li><img src="{{url_for('static', filename="images/slider2.jpg")}}" alt=""></li>
+				<li><img src="{{url_for('static', filename="images/slider3.jpg")}}" alt=""></li>
+				<li><img src="{{url_for('static', filename="images/slider4.jpg")}}" alt=""></li>
+			</ul>
+		<!-- Slideshow 2 -->
+		</div>
+</div>
+<!-- start main -->
+<div class="main_bg">
+<div class="wrap">
+ <div class="main">
+ 	<!-- start main_content -->
+	<div class="content">
+		<div class="content_left">
+			<div class="grids">
+				<ul class="list">
+					<li>
+						<div class="grid_img">
+							<a href="details.html">
+				 				<span class="next"> </span>
+							</a>
+							<img src="{{url_for('static', filename="images/pic1.jpg")}}" alt="" />
+						</div>						
+					</li>
+					<li class="top">
+						<div class="grid_info">
+						    <a href="details.html"><h3>欢迎随时联系我们！</h3></a>
+							<h4>请随时联系我们的电话热线：+86.18019788063</h4>
+							<p>
+								地址：福建省福清市元洪投资区（城头镇）<br/>
+								电话：0591－85588800<br/>
+								传真：0591－85583858<br/>
+								联系人：赵经理 13859073000<br/>
+								Http://www.zflace.com<br/>
+								E-mail:mail@zflace.com<br/>
+							</p>
+							</h4>
+							<p> </p>
+						</div>						
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="content_right">
+			<div class="grids">
+				<ul class="list1">
+					<li class="right">
+						<div class="grid_info">
+							<a href="details.html"><h3>最好的纺织品原材料！</h3></a>
+							<h4>在全世界寻找质量最好的花边原材料?就在这里！</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+						</div>	
+					</li>
+					<li>
+						<div class="grid_img">
+							<a href="details.html">
+				 				<span class="next"> </span>
+							</a>
+							<img src="{{url_for('static', filename="images/pic2.jpg")}}" alt="" />
+						</div>						
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<ul class="list1">
+					<li>
+						<div class="grid_img">
+							<a href="details.html">
+				 				<span class="next"> </span>
+							</a>
+							<img src="{{url_for('static', filename="images/pic3.jpg")}}" alt="" />
+						</div>						
+					</li>
+					<li class="left">
+					<div class="grid_info">
+						<a href="details.html"><h3>福清中纺纺织有限公司</h3></a>
+						<h4>我们生产优质纺织品原材料，并发往世界各地！</h4>
+						<p>福清中纺纺织有限公司是一家集研发、生产、销售贸易于一体的专业性纺织企业，。公司现拥有先进的德国进口卡尔迈耶全电脑控制经编机、花边机三十多台先进设备，集多年经编织品生产之经验，可生产产品包括：蕾丝花边、经编面料、网布面料等，广泛应用于内衣、服装服饰和婚纱等领域。 </p>
+					</div>	
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>		
+		<div class="clear"></div>	
+	</div>
+	<!-- start sidebar -->
+	<div class="sidebar top">	
+				<!---start-da-slider----->
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>随时联系我们</h2>
+					<p>手机：18019788063<br/>EMAIL：i.terryzhao@gmail.com<br/>QQ：16715906</p>
+					<a class="da-link" href="details.html">联系我们 </a>
+				</div>
+				<div class="da-slide">
+					<h2>recent projects</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a class="da-link" href="details.html">meet our works </a>
+				</div>
+				<div class="da-slide">
+					<h2>Clean & Flat Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a class="da-link" href="details.html">meet our works </a>
+				</div>
+				<div class="da-slide">
+					<h2>recent projects</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a class="da-link" href="details.html">meet our works </a>
+				</div>			
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+ 			<!---//End-da-slider----->
+	 	<!---strat da-slider scipt---->
+	    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/da_slider.css') }}" />
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/modernizr.custom.28468.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.cslider.js') }}"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//end da-slider script---->
+		<h3>产品分类</h3>
+		<ul class="s_nav">
+			<li><a href="#"><span>蕾丝花边</span><label>10</label><div class="clear"></div></a></li> 
+			<li><a href="#"><span>贾卡花边</span><label>12</label><div class="clear"></div></a></li>
+			<li><a href="#"><span>经编面料</span><label>20</label><div class="clear"></div></a></li>
+			<li><a href="#"><span>织花面料</span><label>11</label><div class="clear"></div></a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>	
+</div>
+</div>
+</div>
+{% endblock %}
