@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="bg-content">       
+  <!--============================== content =================================-->      
+  <div id="content">
+    <div class="container">
+          <div class="row">
+        <article class="span8">
+         <div class="inner-1">         
+          <ul class="list-blog">
+            <li>  
+            <h3>生产设备 Factory Device</h3> 
+            <!--
+            <time datetime="2012-11-09" class="date-1">9.11.2012</time>
+            <div class="name-author">by <a href="#">Admin</a></div>
+            <a href="#" class="comments">11 comments</a> -->
+            <div class="clear"></div>            
+              <img alt="" src="{{url_for('static',filename='img/device.jpg')}}">                               
+                                         
+              <p>
+                <stong><a href="{{url_for('index')}}" class="link-1">福建福清中纺纺织有限公司</a> </strong>本着“科技研发，创新经营，优质保量”的生产理念，从国内外采购了多种生产设备，引入了日本先进的车间管理技术，为客户朋友们供应最佳的产品，为成为全球化优质针纺行业领头羊而努力。
+      </p>
+ 
+            <h5>纺纱车间</h5>
+            <ul class="list-photo">
+              <li>
+                <a href="{{url_for('static',filename='img/devices/fscj-1.jpg')}}" class="magnifier" >
+                  <img src="{{url_for('static',filename='img/devices/fscj-1-small.jpg')}}" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="{{url_for('static',filename='img/devices/fscj-2.jpg')}}" class="magnifier" >
+                  <img src="{{url_for('static',filename='img/devices/fscj-2-small.jpg')}}" alt="" />
+                </a>
+              </li>
+            </ul>
+
+
+            <h5>织造车间</h5>
+            <ul class="list-photo">
+              <li>
+                <a href="{{url_for('static',filename='img/devices/dzcj-1.jpg')}}" class="magnifier" >
+                  <img src="{{url_for('static',filename='img/devices/dzcj-1-small.jpg')}}" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="{{url_for('static',filename='img/devices/dzcj-2.jpg')}}" class="magnifier" >
+                  <img src="{{url_for('static',filename='img/devices/dzcj-2-small.jpg')}}" alt="" />
+                </a>
+              </li>
+            </ul>
+
+            </li>  
+          </ul>
+          </div>  
+        </article>
+        <article class="span4">
+          <h3>中纺风采</h3>
+          <ul class="list extra extra1">           
+            <li><a href="{{url_for('page', name='about_us')}}">企业简介 About Us</a></li>
+            <li><a href="{{url_for('page', name='our_culture')}}">企业文化 Our Culture</a></li>
+            <li><a href="{{url_for('page', name='devices')}}">生产设备 Factory Devices</a></li>
+          </ul>
+
+          {% include "side_bar.html" %}
+        </article>
+      </div>
+     </div>
+  </div>
+ </div>
+
+{% endblock %}

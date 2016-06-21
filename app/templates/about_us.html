@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="bg-content">       
+  <!--============================== content =================================-->      
+  <div id="content">
+    <div class="container">
+      <div class="row">
+        <article class="span8">
+         <div class="inner-1">         
+          <ul class="list-blog">
+            <li>  
+              <h3>企业简介 About Us</h3> 
+              <!--
+              <time datetime="2012-11-09" class="date-1">9.11.2012</time>
+              <div class="name-author">by <a href="#">Admin</a></div>
+              <a href="#" class="comments">11 comments</a> -->
+              <div class="clear">
+              </div>            
+              <img alt="" src="{{url_for('static',filename='img/aboutus.jpg')}}">                               
+              <p>    <stong><a href="{{url_for('index')}}" class="link-1">福建福清中纺纺织有限公司</a> </strong>位于福建省福清市元洪投资区，创建于2013年，有着多年针织生产经验。本公司专业生产中高档经编莱卡花边,内衣花边,蕾丝花边，服装面料及电脑网眼布提花面料等，用于女性文胸,内衣,内裤外衣所需服饰面辅料及童装，婚纱，窗帘，纺织工艺品等所需的装饰花边。
+              </p>
+              <p>
+                公司坚持高端外向的战略定位。硬件方面配置瑞士、意大利、德国、英国、日本等国际顶尖的技术设备；设立了省级技术中心和具有国际标准的乌斯特实验室，配置了全套的瑞士乌斯特五大测试仪器，引进美国棉花公司的EFS配棉系统，确保产品质量的稳定。软件方面，公司差异化的推行了一系列的改革措施，推动模式和机制的不断优化升级，增加了企业的核心竞争力。 
+              </p>
+              <p>
+
+    本公司先后引进了德国KARL MAYER多种型号的经编设备，现有许多技术先进Raschel经编机如MRSEJ73/1, MRPJ43/1, 
+MRSEJF53/1/24,MRSS42,MRSS32，MRS25等等。此外，我们拥有先进的花边设计软件，能按客户的不同需求进行各种花边工艺的设计和制作。 
+    本着“质量第一，客户至上”的经营宗旨，我司数年来一直致力于内衣,服装系列花边面料产品的研究开发，产品以其独特风格，时尚花型，稳定质量而备受国内外客商的青睐。 
+    我们的信念就是做大做强这一行业，为客户提供更好的产品和优质的服务。我们愿与新老客户携手共进，共展宏图。竭诚欢迎业内人士前来咨询、订购、来料加工或委托加工生产。 </p>
+            </li>  
+          </ul>
+        </div>  
+      </article>
+      <article class="span4">
+          <h3>中纺风采</h3>
+          <ul class="list extra extra1">           
+            <li><a href="{{url_for('page', name='about_us')}}">企业简介 About Us</a></li>
+            <li><a href="{{url_for('page', name='our_culture')}}">企业文化 Our Culture</a></li>
+            <li><a href="{{url_for('page', name='devices')}}">生产设备 Factory Devices</a></li>
+          </ul>
+
+          {% include "side_bar.html" %}
+      </article>
+      </div>
+     </div>
+  </div>
+ </div>
+
+{% endblock %}

@@ -2,7 +2,7 @@
 {% block body%}
 <!--======== bg-content ==========-->
 <div class="bg-content">
-      <div class="container">
+  <div class="container">
     <div class="row">
           <div class="span12"> 
         <!--============================== slider =================================-->
@@ -20,9 +20,9 @@
             <h2>公司简介</h2>
             <div>
             	<p>
-	            	<a href="http://blog.templatemonster.com/free-website-templates/ " target="_blank" class="link-1">福建福清中纺纺织有限公司</a> 
+	            	<a href="{{url_for('index')}}" class="link-1">福建福清中纺纺织有限公司</a> 
 	            	是一家集研发、生产、销售贸易于一体的专业性纺织企业，。公司现拥有先进的德国进口卡尔迈耶全电脑控制经编机、花边机三十多台先进设备，集多年经编织品生产之经验，可生产产品包括：蕾丝花边、经编面料、网布面料等，广泛应用于内衣、服装服饰和婚纱等领域。
-	            	<br/><a href="http://blog.templatemonster.com/free-website-templates/ " target="_blank" class="link-1">>>了解更多中纺风采<<</a>
+	            	<br/><a href="{{url_for('page', name='about_us')}} " target="_blank" class="link-1">>>了解更多中纺风采<<</a>
             	</p>
           	</div>
         </div>
@@ -30,9 +30,9 @@
         </div>
   </div>
       
-      <!--============================== content =================================-->
-      
-      <div id="content" class="content-extra"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
+  <!--============================== content =================================-->
+  
+  <div id="content" class="content-extra">
     <div class="row-1">
           <div class="container">
         <div class="row">
@@ -41,9 +41,9 @@
                   <div class="thumbnail thumbnail-1">
                 <h3>蕾丝花边</h3>
                 <img  src="{{url_for('static',filename='img/page1-img1.jpg')}}" alt="">
-                <section> <strong>Small Lace </strong>
-                      <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-                      <a href="#" class="btn btn-1">查看更多</a> </section>
+                <section> <strong>蕾丝花边Small Lace </strong>
+                      <p></p>
+                      <a href="{{url_for('product_id', name='small_lace')}}" class="btn btn-1">查看更多</a> </section>
               </div>
                 </li>
             <li class="span3">
@@ -51,9 +51,9 @@
                 <h3>贾卡花边</h3>
                 <img  src="{{url_for('static',filename='img/page1-img2.jpg')}}" alt="">
                 <section>
-                	<strong>Jacquard Lace</strong>
-                    <p>Dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                    <a href="#" class="btn btn-1">查看更多</a>
+                	<strong>贾卡花边Jacquard Lace</strong>
+                    <p></p>
+                    <a href="{{url_for('product_id', name='jacquard_lace')}}" class="btn btn-1">查看更多</a>
                 </section>
               </div>
                 </li>
@@ -62,122 +62,28 @@
                 <h3>经编花边</h3>
                 <img  src="{{url_for('static',filename='img/page1-img3.jpg')}}" alt="">
                 <section> 
-                	<strong>Lace Fabric</strong>
-                    <p>Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    <a href="#" class="btn btn-1">查看更多</a>
+                	<strong>经编花边Lace Fabric</strong>
+                    <p></p>
+                    <a href="{{url_for('product_id', name='lace_fabric')}}" class="btn btn-1">查看更多</a>
                 </section>
               </div>
                 </li>
             <li class="span3">
                 <div class="thumbnail thumbnail-1">
-                <h3 class="title-1 extra">针织面料</h3>
+                <h3 class="title-1 extra">织花面料</h3>
                 <img  src="{{url_for('static',filename='img/page1-img4.jpg')}}" alt="">
                 <section>
-                	<strong>Embroidery Fabric</strong>
-                    <p>Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    <a href="#" class="btn btn-1">Read More</a> 
+                	<strong>织花面料Embroidery Fabric</strong>
+                    <p></p>
+                    <a href="{{url_for('product_id', name='embroidery_fabric')}}" class="btn btn-1">Read More</a> 
                 </section>
               </div>
                 </li>
           </ul>
             </div>
       </div>
-        </div>
-    <div class="container">
-        <div class="row">
-        <article class="span6">
-            <h3>联系我们</h3>
-            <div class="wrapper">
-            <figure class="img-indent">
-            	<img src="{{url_for('static',filename='img/page1-img14.jpg')}}" alt="" />
-            </figure>
-            <div class="inner-1 overflow extra">
-                <div class="txt-1">
-                	请随时联系我们的电话热线：+86.18019788063
-                </div>
-                <p>
-	                地址：福建省福清市元洪投资区（城头镇）<br/>
-					电话：0591－85588800<br/>
-					传真：0591－85583858<br/>
-					联系人：赵经理 13859073000<br/>
-					Http://www.zflace.com<br/>
-					E-mail:mail@zflace.com
-				</p>
-                <div class="border-horiz">
-                </div>
-                <div class="overflow">
-                	<ul class="list list-pad">
-                      <li><a href="#">蕾丝花边</a></li>
-                      <li><a href="#">贾卡花边</a></li>
-                      <li><a href="#">经编花边</a></li>
-                      <li><a href="#">织花边料</a></li>
-                    </ul>
-                	<ul class="list list-pad">
-                      <li><a href="#">企业简介</a></li>
-                      <li><a href="#">企业设备</a></li>
-                      <li><a href="#">生产设备</a></li>
-                    </ul>
-                	<ul class="list">
-                      <li><a href="#">人才战略</a></li>
-                      <li><a href="#">人才观念</a></li>
-                      <li><a href="#">培训学习</a></li>
-                    </ul>
-                </div>
-            </div>
-          </div>
-        </article>
-        <article class="span6">
-                <h3>最新产品图例</h3>
-                <ul class="list-photo">
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img6.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img7.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img8.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img9.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img10.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img11.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img12.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img13.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-	            	<li>
-	            		<a href="{{url_for('static',filename='img/image-blank.png')}}" class="magnifier" >
-	            			<img src="{{url_for('static',filename='img/page1-img14.jpg')}}" alt="" />
-	            		</a>
-	            	</li>
-          </ul>
-            </article>
-      </div>
-        </div>
-  </div>
     </div>
+    {% include "ref_bottom.html" %}
+  </div>
+</div>
 {% endblock %}

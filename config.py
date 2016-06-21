@@ -5,8 +5,8 @@ MAIL_SERVER = 'smtp.qq.com'
 MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
-MAIL_USERNAME = ''
-MAIL_PASSWORD = ''
+MAIL_USERNAME = '16715906@qq.com'
+MAIL_PASSWORD = 'SHENGsheng@2014'
 
 # administrator list
 ADMINS = ['']

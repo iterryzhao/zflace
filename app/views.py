@@ -10,37 +10,53 @@ def index():
 @app.route('/contact/', methods=['GET','POST'])
 def contact():
   name = None
-  phone = None
+  #phone = None
   msg = None
   email = None
   form = ContactForm()
-  print 'asdfasdfasd'
   #if form.validate_on_submit():
   if request.method=='POST':
     name = request.form['name']
-    phone = request.form['phone']
+    #phone = request.form['phone']
     email = request.form['email']
     msg = request.form['message']
-    print msg
     #owner_email = request.form['owner_email']
     mail = Mail(app)
-    print 'testing'
-    message = Message("From"+name, sender="16715906@qq.com", recipients=["16715906@qq.com"])
+    message = Message("From"+name+" via ZFLACE.COM", sender="16715906@qq.com", recipients=["16715906@qq.com"])
     #message.body="testing terry"
     message.html=msg+"<br/>Contact me via email: "+email
     mail.send(message)
-  print "success"
   return render_template('contact.html'
     , form=form)
 
 
-@app.route('/product/')
+@app.route('/product')
 def product():
   return render_template('product.html')
-
+  
 @app.route('/product/<name>')
 def product_id(name):
+  if name=='small_lace':
+    return render_template('small_lace.html')
+  elif name=='lace_fabric':
+    return render_template('lace_fabric.html')
+  elif name=='jacquard_lace':
+    return render_template('jacquard_lace.html')
+  elif name=='embroidery_fabric':
+    return render_template('embroidery_fabric.html')
+
   return render_template('product.html', name = name)
+
+@app.route('/page/<name>')
+def page(name):
+  if name=='about_us':
+    return render_template('about_us.html')
+  elif name=='our_culture':
+    return render_template('our_culture.html')
+  elif name=='devices':
+    return render_template('devices.html')
+
+
 '''
 @app.errorhandler(404)
 def page_not_found(e):

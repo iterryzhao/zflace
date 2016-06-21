@@ -9,67 +9,56 @@
           <article class="span8">
             <h3>Contact us</h3>
             <div class="inner-1">
-              <form id="contact-form" method="POST">
+              <form id="contact-form" action="{{url_for('contact')}}" method="POST">
                 {{ form.hidden_tag() }}
                 <div class="success"> 
-                  Contact form submitted! 
-                  <strong>We will be in touch soon.</strong> 
+                  <strong>
+                    发送成功! 
+                    您还可通过拨打手机 +86.13859073000 联系我们！
+                  </strong> 
                 </div>
                 <fieldset>
                   <div>
                     <label class="name">
-                      {{ form.name(value="Your Name",id="name") }}
+                      {{ form.name(value="请在此输入您的尊称",id="name") }}
                       <br>
-                      <span class="error">*This is not a valid name.</span>
-                      <span class="empty">*This field is required.</span>
+                      <span class="error">*请输入中文.Pls input a chinese name</span>
+                      <span class="empty">*请告知您的尊称.Pls tell us the name.</span>
                     </label>
                   </div>
+                  <!--
                   <div>
                     <label class="phone">
-                      {{ form.phone(value="Your Telephone Number",id="phone",type='tel') }}
+                      form.phone(value="Your Telephone Number",id="phone",type='tel') 
                       <br>
                       <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> 
                     </label>
                   </div>
+                -->
                   <div>
                     <label class="email">
-                      {{ form.email(value="Your Email",id="email",type="email") }}
+                      {{ form.email(value="请在此输入您的电邮地址。",id="email",type="email") }}
                       <br>
-                      <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+                      <span class="error">*请输入正确的邮箱地址。This is not a valid email address.</span> <span class="empty">*请告知您的电邮地址。This field is required.</span> </label>
                     </div>
                 <div>
                   <label class="message">
-                    {{ form.msg(default="Your Message",id="message") }}
+                    {{ form.msg(default="请在此输入要垂询的信息内容。",id="message") }}
                     <br>
-                    <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> 
+                    <span class="error">*信息内容至少要20个字吧亲。The message is too short.</span> <span class="empty">*This field is required.</span> 
                   </label>
                 </div>
                 <div class="buttons-wrapper"> 
-                  <a class="btn btn-1" data-type="reset">Clear</a> 
-                  <a class="btn btn-1" data-type="submit">Send</a>
+                  <a class="btn btn-1" data-type="reset">清空</a> 
+                  <a class="btn btn-1" data-type="submit">发送</a>
                 </div>
               </fieldset>
                 </form>
           </div>
         </article>
         <article class="span4">
-            <h3>Contact info</h3>
-            <div class="map"></div>
-            <address class="address-1">
-		        <strong>福清中纺针织有限公司<br>
-		              福建省福清元洪投资区（城头镇）<br>
-		              Yuanhong Investment Zone, Fuqing City, Fujian, China 350314
-		        </strong>
-	          	<div class="overflow"> 
-                  <span>联系人:</span>赵经理 TerryZhao<br>
-                  <span>手机 Mob.:</span>+86 13850195395<br>
-	                <span>电话 Tel.:</span>0591-85586608 / 85586708<br>
-	                <span>传真FAX:</span>0591-85586628 <br>
-	                <span>邮箱E-mail:</span> <a href="#" class="mail-1">1367665828@qq.com</a><br>
-	                <span>QQ:</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1367665828&amp;site=qq&amp;menu=yes" class="mail-1">1367665828</a>
-	            </div>
-          	</address>
-            </article>
+          {% include "side_bar.html" %}
+        </article>
       </div>
         </div>
   </div>
