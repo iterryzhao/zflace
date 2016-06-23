@@ -1,3 +1,3 @@
-from flask.ext.mail import mail,Message
+from flask_mail import mail,Message
 
 mail = Mail(app)

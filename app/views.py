@@ -1,7 +1,7 @@
 from flask import render_template,request
 from app import app
 from forms import ContactForm
-from flask.ext.mail import Mail,Message
+from flask_mail import Mail,Message
 
 @app.route('/')
 def index():
