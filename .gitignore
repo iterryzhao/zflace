@@ -2,4 +2,4 @@
 # Instance folders are used to make secret configuration variables available to your application.
 *.pyc
 instance/
-log/
+log/*
