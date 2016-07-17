@@ -33,7 +33,7 @@ def contact():
 @app.route('/product')
 def product():
   #return render_template('product.html')
-  return redirect(url_for('index'))
+  #return redirect(url_for('index'))
   
 @app.route('/product/<name>')
 def product_id(name):
