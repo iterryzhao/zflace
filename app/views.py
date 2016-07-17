@@ -32,7 +32,8 @@ def contact():
 
 @app.route('/product')
 def product():
-  return render_template('product.html')
+  #return render_template('product.html')
+  #return redirect(url_for('index'))
   
 @app.route('/product/<name>')
 def product_id(name):
@@ -45,7 +46,8 @@ def product_id(name):
   elif name=='embroidery_fabric':
     return render_template('embroidery_fabric.html')
 
-  return render_template('product.html', name = name)
+  #return render_template('product.html', name = name)
+  #return redirect(url_for('index'))
 
 @app.route('/page/<name>')
 def page(name):
