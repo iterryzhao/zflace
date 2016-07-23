@@ -6,7 +6,7 @@ MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
 MAIL_USERNAME = '16715906@qq.com'
-MAIL_PASSWORD = 'SHENGsheng@2014'
+MAIL_PASSWORD = 'huihuimaomao-11'
 
 # administrator list
 ADMINS = ['']
